@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0a0610" />
+  <title>Count Scragula | $SCRAG on Solana</title>
+  <meta name="description" content="Count Scragula ($SCRAG) — tiny cat, big chaos. A fixed-supply Solana memecoin with revoked mint/freeze authorities and immutable metadata." />
+  <meta property="og:title" content="Count Scragula | $SCRAG" />
+  <meta property="og:description" content="Tiny cat. Big chaos. Fixed supply, revoked mint/freeze authorities, immutable metadata." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/gaby401/count-Scragula-memecoin/main/logo.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Count Scragula | $SCRAG" />
+  <meta name="twitter:description" content="Tiny cat. Big chaos. $SCRAG on Solana." />
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/gaby401/count-Scragula-memecoin/main/logo.png" />
+  <style>
+    :root{--bg:#07040b;--panel:#110918;--panel2:#1a0d24;--purple:#a855f7;--purple2:#7c3aed;--pink:#e879f9;--text:#f7f2ff;--muted:#b7a9c7;--line:#2a1738;--green:#86efac;--gold:#fde68a}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at 50% -10%,#25103a 0,#0b0611 35%,var(--bg) 70%);color:var(--text);overflow-x:hidden}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 32px));margin:auto}.nav{position:sticky;top:0;z-index:20;background:rgba(7,4,11,.72);backdrop-filter:blur(14px);border-bottom:1px solid rgba(168,85,247,.15)}.navin{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.3px}.brand img{width:38px;height:38px;border-radius:50%;object-fit:cover;border:1px solid #5b2a78}.navlinks{display:flex;align-items:center;gap:20px;color:#d5c8e1;font-size:14px}.navlinks a:hover{color:white}.pill{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border-radius:999px;font-weight:800;border:1px solid transparent;transition:.2s}.pill.primary{background:linear-gradient(135deg,var(--purple),var(--purple2));box-shadow:0 0 30px rgba(168,85,247,.22)}.pill.primary:hover{transform:translateY(-1px);box-shadow:0 0 40px rgba(168,85,247,.35)}.pill.secondary{border-color:#4a2a61;background:#120a1a}.pill.secondary:hover{border-color:#8b4fba;background:#180d21}
+    .status{margin-top:22px;display:inline-flex;gap:9px;align-items:center;padding:9px 13px;border:1px solid #5b3c1c;background:#1a1208;border-radius:999px;color:var(--gold);font-size:13px;font-weight:800}.status .dot{width:8px;height:8px;background:#fbbf24;border-radius:50%;box-shadow:0 0 12px #fbbf24}
+    .hero{min-height:calc(100vh - 72px);display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:50px;padding:70px 0 85px;position:relative}.eyebrow{color:#c084fc;font-weight:900;text-transform:uppercase;letter-spacing:2px;font-size:12px}.hero h1{font-size:clamp(58px,9vw,112px);line-height:.87;margin:16px 0 22px;letter-spacing:-5px}.hero h1 span{display:block;background:linear-gradient(135deg,#fff 15%,#d8b4fe 50%,#a855f7 90%);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:clamp(18px,2.4vw,24px);line-height:1.45;color:#cdbedf;max-width:680px}.lead strong{color:white}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.catwrap{position:relative;display:grid;place-items:center}.halo{position:absolute;width:84%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#b85cff33 0,#8b5cf622 35%,transparent 70%);filter:blur(6px);animation:pulse 5s ease-in-out infinite}.cat{position:relative;width:min(100%,520px);border-radius:50%;filter:drop-shadow(0 0 35px rgba(168,85,247,.35));animation:float 5s ease-in-out infinite}.bat{position:absolute;color:#a855f7;font-size:30px;opacity:.55}.b1{left:5%;top:12%;transform:rotate(-15deg)}.b2{right:2%;top:28%;font-size:20px}.b3{left:15%;bottom:12%;font-size:17px}@keyframes float{50%{transform:translateY(-12px)}}@keyframes pulse{50%{transform:scale(1.08);opacity:.65}}
+    section{padding:92px 0;border-top:1px solid rgba(168,85,247,.08)}.sectiontag{color:#c084fc;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:2px}.sectiontitle{font-size:clamp(34px,5vw,58px);line-height:1.05;margin:12px 0 15px;letter-spacing:-2px}.sub{max-width:720px;color:var(--muted);font-size:17px;line-height:1.65}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px}.card{background:linear-gradient(180deg,rgba(26,13,36,.9),rgba(12,7,17,.92));border:1px solid var(--line);border-radius:22px;padding:22px}.check{font-size:26px;margin-bottom:15px}.card h3{margin:0 0 8px;font-size:17px}.card p{margin:0;color:var(--muted);font-size:14px;line-height:1.5}.green{color:var(--green)}
+    .caBox{margin-top:28px;padding:22px;border:1px solid #4b2462;border-radius:22px;background:linear-gradient(135deg,#13091c,#0b0710);display:flex;align-items:center;justify-content:space-between;gap:18px}.caText{min-width:0}.caLabel{font-size:11px;color:#a996b8;text-transform:uppercase;letter-spacing:1.4px;font-weight:900}.ca{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:14px;margin-top:7px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.copy{border:1px solid #6e368d;background:#1b0c25;color:white;border-radius:12px;padding:11px 14px;cursor:pointer;font-weight:800;white-space:nowrap}.copy:hover{background:#2b123c}
+    .tokenomics{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:34px}.alloc{min-height:230px;display:flex;flex-direction:column;justify-content:space-between}.big{font-size:72px;line-height:1;font-weight:1000;letter-spacing:-4px}.bar{height:12px;border-radius:999px;background:#22152b;overflow:hidden;margin-top:25px}.bar span{display:block;height:100%;background:linear-gradient(90deg,var(--purple2),var(--pink));border-radius:999px}.alloc p{color:var(--muted);line-height:1.55}.address{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:#d8c5e7;overflow-wrap:anywhere}
+    .lore{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center}.quote{font-size:clamp(28px,4vw,46px);font-weight:900;line-height:1.12;letter-spacing:-1px}.quote em{font-style:normal;color:#c084fc}.timeline{margin-top:28px;display:grid;gap:12px}.step{display:flex;gap:14px;align-items:flex-start;padding:15px 0;border-bottom:1px solid #24142f}.num{width:34px;height:34px;display:grid;place-items:center;border-radius:10px;background:#1e0f29;color:#c084fc;font-weight:900;flex:none}.step b{display:block;margin-bottom:5px}.step span{color:var(--muted);font-size:14px;line-height:1.45}
+    .cta{text-align:center;padding:110px 0}.cta h2{font-size:clamp(44px,7vw,86px);letter-spacing:-4px;line-height:.95;margin:0 0 20px}.cta p{color:var(--muted);font-size:18px}.warning{margin:28px auto 0;max-width:780px;color:#8f819c;font-size:12px;line-height:1.6}.footer{border-top:1px solid var(--line);padding:30px 0 50px;color:#8f819c;font-size:13px}.footin{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.socials{display:flex;gap:16px}.socials a:hover{color:white}
+    @media(max-width:850px){.navlinks a:not(.pill){display:none}.hero{grid-template-columns:1fr;text-align:center;padding-top:40px}.hero h1{letter-spacing:-3px}.lead{margin:auto}.actions{justify-content:center}.catwrap{order:-1}.cat{width:min(82vw,430px)}.grid4{grid-template-columns:1fr 1fr}.lore,.tokenomics{grid-template-columns:1fr}.caBox{align-items:stretch;flex-direction:column}.copy{width:100%}.big{font-size:58px}.cta h2{letter-spacing:-2px}}@media(max-width:520px){.wrap{width:min(100% - 22px,1120px)}.navin{height:64px}.brand span{font-size:14px}.grid4{grid-template-columns:1fr}.hero{min-height:auto;padding-bottom:62px}.status{font-size:11px}.actions .pill{width:100%}.sectiontitle{letter-spacing:-1px}section{padding:70px 0}.card{padding:18px}}
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap navin">
+      <a class="brand" href="#top"><img src="logo.png" alt="Count Scragula logo"><span>COUNT SCRAGULA</span></a>
+      <div class="navlinks"><a href="#proof">Proof</a><a href="#tokenomics">Tokenomics</a><a href="#lore">Lore</a><a class="pill secondary" href="https://x.com/countscragula" target="_blank" rel="noopener">Follow on X</a></div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <div class="wrap hero">
+      <div>
+        <div class="eyebrow">A Solana memecoin with tiny fangs</div>
+        <div class="status"><span class="dot"></span> PRE-LAUNCH — TRADING NOT LIVE YET</div>
+        <h1>COUNT <span>SCRAGULA</span></h1>
+        <p class="lead"><strong>Tiny cat. Big chaos.</strong> Count Scragula crawled out of the crypt with one billion $SCRAG and absolutely no intention of behaving.</p>
+        <div class="actions">
+          <a class="pill primary" href="https://x.com/countscragula" target="_blank" rel="noopener">Join the chaos on X ↗</a>
+          <a class="pill secondary" href="https://solscan.io/token/JBvMmv7ixZYzZMd7LcLGjnpJJipAvYo348sAML9bic7o" target="_blank" rel="noopener">Verify on Solscan ↗</a>
+        </div>
+      </div>
+      <div class="catwrap">
+        <div class="halo"></div><div class="bat b1">🦇</div><div class="bat b2">🦇</div><div class="bat b3">🦇</div>
+        <img class="cat" src="logo.png" alt="Count Scragula vampire cat mascot">
+      </div>
+    </div>
+
+    <section id="proof">
+      <div class="wrap">
+        <div class="sectiontag">On-chain proof</div>
+        <h2 class="sectiontitle">Trust the chain, not the hype.</h2>
+        <p class="sub">$SCRAG was built as a straightforward classic SPL token. The supply is fixed, administrative token controls are gone, and the metadata is permanently immutable.</p>
+        <div class="grid4">
+          <div class="card"><div class="check green">✓</div><h3>Mint revoked</h3><p>No additional $SCRAG can be created.</p></div>
+          <div class="card"><div class="check green">✓</div><h3>Freeze revoked</h3><p>No authority can freeze holder token accounts.</p></div>
+          <div class="card"><div class="check green">✓</div><h3>Immutable metadata</h3><p>Name, ticker and permanent metadata are locked.</p></div>
+          <div class="card"><div class="check green">✓</div><h3>Fixed 1B supply</h3><p>1,000,000,000 $SCRAG. No transfer tax logic.</p></div>
+        </div>
+        <div class="caBox">
+          <div class="caText"><div class="caLabel">Official Solana contract address</div><div class="ca" id="ca">JBvMmv7ixZYzZMd7LcLGjnpJJipAvYo348sAML9bic7o</div></div>
+          <button class="copy" id="copyBtn" type="button">Copy CA</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="tokenomics">
+      <div class="wrap">
+        <div class="sectiontag">Transparent tokenomics</div>
+        <h2 class="sectiontitle">Simple enough for a vampire cat.</h2>
+        <p class="sub">The supply structure is intentionally uncomplicated. No private creator allocation and no ability to mint more tokens.</p>
+        <div class="tokenomics">
+          <div class="card alloc"><div><div class="big">90%</div><h3>Launch supply</h3><p>900,000,000 SCRAG reserved for the public launch / liquidity path. Trading is not live yet.</p></div><div class="bar"><span style="width:90%"></span></div></div>
+          <div class="card alloc"><div><div class="big">10%</div><h3>Community treasury</h3><p>100,000,000 SCRAG held separately for community growth, promotions and future project needs.</p><div class="address">EqEyhWi1D3S8FkuwuB2aJVF6So6zFyB3ycgSFTaYxuPF</div></div><div class="bar"><span style="width:10%"></span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="lore">
+      <div class="wrap lore">
+        <div>
+          <div class="sectiontag">The lore</div>
+          <div class="quote">He was tiny.<br>He was scraggy.<br>Then the moon came out.<br><em>Count Scragula awakened.</em></div>
+        </div>
+        <div class="card">
+          <h3 style="font-size:24px;margin-top:0">The plan</h3>
+          <div class="timeline">
+            <div class="step"><div class="num">1</div><div><b>Build the cult</b><span>Memes, lore and community first. No pretending a market exists before it does.</span></div></div>
+            <div class="step"><div class="num">2</div><div><b>Fair launch</b><span>Open the launch path when the community is ready and publish the official links.</span></div></div>
+            <div class="step"><div class="num">3</div><div><b>Grow the crypt</b><span>Community content, partnerships and utility experiments without changing the fixed token supply.</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap">
+        <div class="sectiontag">Enter the crypt</div>
+        <h2>TINY CAT.<br>BIG CHAOS.</h2>
+        <p>Follow the official X account for the launch announcement.</p>
+        <div class="actions" style="justify-content:center"><a class="pill primary" href="https://x.com/countscragula" target="_blank" rel="noopener">@countscragula ↗</a></div>
+        <p class="warning">$SCRAG is a memecoin. Memecoins are highly speculative and can lose most or all of their value. Nothing on this site is financial advice or a promise of returns. Always verify the contract address and do your own research.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="wrap footin"><div>© 2026 Count Scragula. Tiny cat, big chaos.</div><div class="socials"><a href="https://x.com/countscragula" target="_blank" rel="noopener">X</a><a href="https://solscan.io/token/JBvMmv7ixZYzZMd7LcLGjnpJJipAvYo348sAML9bic7o" target="_blank" rel="noopener">Solscan</a><a href="https://github.com/gaby401/count-Scragula-memecoin" target="_blank" rel="noopener">GitHub</a></div></div></footer>
+
+  <script>
+    const ca='JBvMmv7ixZYzZMd7LcLGjnpJJipAvYo348sAML9bic7o';
+    const btn=document.getElementById('copyBtn');
+    btn.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(ca);btn.textContent='Copied ✓';setTimeout(()=>btn.textContent='Copy CA',1800)}catch(e){btn.textContent='Copy failed'}});
+  </script>
+</body>
+</html>
