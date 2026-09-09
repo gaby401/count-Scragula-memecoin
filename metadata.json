@@ -1,0 +1,22 @@
+{
+  "name": "Count Scragula",
+  "symbol": "SCRAG",
+  "description": "Count Scragula is a tiny black vampire cat memecoin on Solana. Tiny cat, big chaos.",
+  "image": "https://raw.githubusercontent.com/gaby401/count-Scragula-memecoin/main/logo.png",
+  "external_url": "https://x.com/countscragula",
+  "attributes": [
+    { "trait_type": "Species", "value": "Cat" },
+    { "trait_type": "Theme", "value": "Vampire" },
+    { "trait_type": "Vibe", "value": "Tiny cat, big chaos" },
+    { "trait_type": "Chain", "value": "Solana" }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "https://raw.githubusercontent.com/gaby401/count-Scragula-memecoin/main/logo.png",
+        "type": "image/png"
+      }
+    ],
+    "category": "image"
+  }
+}
